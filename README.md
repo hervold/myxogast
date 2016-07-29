@@ -32,6 +32,11 @@ Broadly, there are 3 node types: sequence fragments, branches, and probability d
 Currently, basic Needleman-Wunsch alignment works, basic graphs are parsed correctly, and some basic form of graph alignment seems to work.
 
 
+## References
+Internally, many existing tools align a tree structure to a reference, including the most popular aligner used in NGS analysis, [bwa](http://bio-bwa.sourceforge.net/).  Sequence-graph representations include [FASTG](http://fastg.sourceforge.net/).
+
+Gusfield's ["Algorithms on Strings, Trees and Sequences: Computer Science and Computational Biology"](https://www.amazon.com/Algorithms-Strings-Trees-Sequences-Computational/dp/0521585198) includes various discussions of tree/sequence alignment, including section 12.3.1 (page 271), and 17.7 (page 474).
+
 ## Internals
 Reference sequence graphs are represented like so:
 ```Rust
