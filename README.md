@@ -33,9 +33,10 @@ Currently, basic Needleman-Wunsch alignment works, basic graphs are parsed corre
 
 
 ## References
+Myxogast's core graph-alignment algorithm is based on an algorithm discussed in section 12.4.2 (p283) of Gusfield's ["Algorithms on Strings, Trees and Sequences: Computer Science and Computational Biology"](https://www.amazon.com/Algorithms-Strings-Trees-Sequences-Computational/dp/0521585198), where an alignment of two suffix trees is discussed.  Another variation combining trees and dynamic programming is discussed later, in section 17.7 (p474).
+
 Internally, many existing tools align a tree structure to a reference, including the most popular aligner used in NGS analysis, [bwa](http://bio-bwa.sourceforge.net/).  Sequence-graph representations include [FASTG](http://fastg.sourceforge.net/).
 
-Gusfield's ["Algorithms on Strings, Trees and Sequences: Computer Science and Computational Biology"](https://www.amazon.com/Algorithms-Strings-Trees-Sequences-Computational/dp/0521585198) includes various discussions of tree/sequence alignment, including section 12.3.1 (page 271), and 17.7 (page 474).
 
 ## Internals
 Reference sequence graphs are represented like so:
