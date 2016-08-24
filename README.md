@@ -3,7 +3,7 @@
 # Myxogast
 ## A graph aligner in Rust
 
-Myxogast will be a network aligner based on the [classic dynamic programming](http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm) [algorithms](https://en.wikipedia.org/wiki/Viterbi_algorithm), and using a novel JSON reference sequence format supporting:
+Myxogast will be a network aligner based on the [classic dynamic programming](http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm) [algorithms](https://en.wikipedia.org/wiki/Viterbi_algorithm), and using a JSON-based reference sequence format supporting:
  * wildcards ('N' and '*')
  * branch points
  * HMM-style probabilities
